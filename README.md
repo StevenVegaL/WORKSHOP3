@@ -69,17 +69,9 @@ La estructura del repositorio está organizada de la siguiente manera:
 │   └── 📄 my_happiness_model.pkl    # Modelo de Random Forest entrenado
 └── 📂 notebook               # Notebooks Jupyter para análisis
     └── 📄 eda.ipynb                # Análisis exploratorio de datos
+```
 
-
-
-
-
-
-
-
-
-
-##  🚀 Ejecución
+## 🚀 Ejecución
 
 1. **Asegúrate de que Docker esté instalado en tu máquina.**
 
@@ -121,10 +113,10 @@ La estructura del repositorio está organizada de la siguiente manera:
 
 ```sh
 # Clona el repositorio
-git clone https://github.com/usuario/repositorio.git
+git https://github.com/StevenVegaL/WORKSHOP3/tree/main
 
 # Navega al directorio del proyecto
-cd repositorio
+cd ejemplo
 
 # Inicia los servicios con Docker Compose
 docker-compose up -d
@@ -144,4 +136,3 @@ docker exec -it kafka kafka-topics --list --bootstrap-server localhost:9092
 ```
 
 ¡Y listo! Ahora puedes disfrutar explorando y prediciendo la felicidad en todo el mundo. 🌟😊
-```
