@@ -1,4 +1,4 @@
-# 🌍✨ **Predicción del Índice de Felicidad en Países de Todo el Mundo** 🤖😊
+#  **Predicción del Índice de Felicidad en Países de Todo el Mundo** 🤖😊
 
 ## 🌟 Overview
 Este proyecto se centra en la predicción del índice de felicidad de diferentes países utilizando técnicas avanzadas de aprendizaje automático y procesamiento de datos en tiempo real. Aprovechando el poder del streaming de datos con Kafka y la precisión del modelo de Random Forest, hemos desarrollado un sistema robusto y eficiente para realizar predicciones precisas y almacenarlas en una base de datos PostgreSQL.
@@ -70,3 +70,10 @@ La estructura del repositorio está organizada de la siguiente manera:
 └── 📂 notebook               # Notebooks Jupyter para análisis
     └── 📄 eda.ipynb                # Análisis exploratorio de datos
 
+
+## 🚀 Ejecución
+Sigue estos sencillos pasos para poner en marcha el proyecto:
+
+1. **Clona este repositorio**:
+   ```sh
+   git clone https://github.com/usuario/repositorio.git
