@@ -121,14 +121,8 @@ cd ejemplo
 # Inicia los servicios con Docker Compose
 docker-compose up -d
 
-# Verifica que los contenedores estén en funcionamiento
-docker-compose ps
-
 # Crea un topic en Kafka
 docker exec -it kafka kafka-topics --create --topic happy_test --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
-
-# Verifica el topic creado
-docker exec -it kafka kafka-topics --list --bootstrap-server localhost:9092
 
 # Ejecuta el productor y el consumidor
 # Inicia el productor en la función send_message de feature_selection
