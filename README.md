@@ -71,9 +71,3 @@ La estructura del repositorio está organizada de la siguiente manera:
     └── 📄 eda.ipynb                # Análisis exploratorio de datos
 
 
-## 🚀 Ejecución
-Sigue estos sencillos pasos para poner en marcha el proyecto:
-
-1. **Clona este repositorio**:
-   ```sh
-   git clone https://github.com/usuario/repositorio.git
