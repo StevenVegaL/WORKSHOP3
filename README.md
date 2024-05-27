@@ -1,4 +1,4 @@
-# 🌍✨ Predicción del Índice de Felicidad en Países de Todo el Mundo ✨🌍
+# 🤖😊 𝓟𝓻𝓮𝓭𝓲𝓬𝓬𝓲ó𝓷 𝓭𝓮𝓵 Í𝓷𝓭𝓲𝓬𝓮 𝓭𝓮 𝓕𝓮𝓵𝓲𝓬𝓲𝓭𝓪𝓭 𝓮𝓷 𝓟𝓪í𝓼𝓮𝓼 𝓭𝓮 𝓣𝓸𝓭𝓸 𝓮𝓵 𝓜𝓾𝓷𝓭𝓸 🤖😊
 
 ## 🌟 Overview
 Este proyecto se centra en la predicción del índice de felicidad de diferentes países utilizando técnicas avanzadas de aprendizaje automático y procesamiento de datos en tiempo real. Aprovechando el poder del streaming de datos con Kafka y la precisión del modelo de Random Forest, hemos desarrollado un sistema robusto y eficiente para realizar predicciones precisas y almacenarlas en una base de datos PostgreSQL.
