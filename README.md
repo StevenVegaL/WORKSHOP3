@@ -73,38 +73,43 @@ La estructura del repositorio está organizada de la siguiente manera:
 
 ## 🚀 Ejecución
 
-1. **Asegúrate de que Docker esté instalado en tu máquina.**
+1.  **Asegúrate de instalar todas las librerías necesarias listadas en requirements.txt:**:
+   ```sh
+   pip install -r requirements.txt
+   ```
+   
+2. **Asegúrate de que Docker esté instalado en tu máquina.**
 
-2. **Guardar el archivo `docker-compose.yml` en tu directorio de trabajo, en la raíz de este.**
+3. **Guardar el archivo `docker-compose.yml` en tu directorio de trabajo, en la raíz de este.**
 
-3. **Iniciar los servicios usando Docker Compose**:
+4. **Iniciar los servicios usando Docker Compose**:
    ```sh
    docker-compose up -d
    ```
    Esto descargará las imágenes necesarias y levantará los contenedores de Zookeeper y Kafka Broker.
 
-4. **Verificar los contenedores en funcionamiento**:
+5. **Verificar los contenedores en funcionamiento**:
    ```sh
    docker-compose ps
    ```
    Asegúrate de que ambos contenedores, zookeeper y kafka, estén en estado `Up`. También puedes verificar esto en Docker Desktop.
 
-5. **Crear un Topic en Kafka**:
+6. **Crear un Topic en Kafka**:
    Si no has creado un topic aún, puedes hacerlo ejecutando el siguiente comando desde el contenedor de Kafka:
    ```sh
    docker exec -it kafka kafka-topics --create --topic happy_test --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
    ```
 
-6. **Verificar el topic creado**:
+7. **Verificar el topic creado**:
    ```sh
    docker exec -it kafka kafka-topics --list --bootstrap-server localhost:9092
    ```
 
-7. **Ejecuta el Productor y Consumidor**:
+8. **Ejecuta el Productor y Consumidor**:
    - Inicia el productor en el archivo `feature_selection` en la función `def send_message`.
    - Simultáneamente, ejecuta el consumidor en el archivo `model_prediction` en la función `def consume_messages`.
 
-8. **Verificación Final**:
+9. **Verificación Final**:
    Después de ejecutar el productor y el consumidor:
    - Asegúrate de que el productor envía los mensajes y se detiene.
    - Verifica que el consumidor recibe todos los mensajes, imprime la salida deseada, y se cierra correctamente después de un período de inactividad.
